@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Professional Photographer David Diaz">
+
+    <title>Professional Photographer | David Diaz</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="css/ddpp.css">
+  </head>
+
+  <body>
+    <div id="sidebarMenu" class="ui top sidebar horizontal inverted dividing five item menu">
+      <a onclick="scrollToTitle('#aboutMe')" class="item sidebarItem">About Me</a>
+      <a onclick="scrollToTitle('#mySampleWorks')" class="item sidebarItem">My Sample Works</a>
+      <a onclick="scrollToTitle('#references')" class="item sidebarItem">References</a>
+      <a onclick="scrollToTitle('#awards')" class="item sidebarItem">Awards</a>
+      <a onclick="scrollToTitle('#contact')" class="item sidebarItem">Contact</a>
+    </div>
+    <div class="pusher">
+
+      <div id="sidebarBtnSegment" class="ui compact inverted raised segment">
+        <button id="sidebarBtn" class="ui inverted circular basic inverted icon button">
+          <i class="fas fa-bars icon"></i>
+        </button>
+      </div>
+
+      <div id="profilePicBig" class="ui image">
+        <img id="picBig" src="res/images/profile-pic-big.jpg" alt="David Diaz Professional Photographer">
+
+        <div id="picBigDimmer" class="ui active dimmer">
+          <div class="content">
+            <div class="ui grid">
+              <div class="ui two column row">
+                <div class="ui middle aligned column">
+                  <div class="ui list">
+                    <p id="name" class="ui dividing header item">David Diaz</p>
+                    <p id="title" class="ui sub header item">Professional Photographer</p>
+                  </div>
+                </div>
+                <div class="ui column">
+                  <img class="ui big circular image" src="res/images/profile-pic-small.jpg" alt="David Diaz Professional Photographer">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="aboutMe"></div>
+      <div id="aboutMeSection" class="ui stackable grid">
+        <div class="ui one column row">
+          <div class="ui center aligned column">
+            <p id="aboutMeTitle" class="ui dividing header">About Me</p>
+          </div>
+
+          <div id="referencesRow" class="ui center aligned segment">
+            <p id="aboutMeContent">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit varius dolor, et dictum lorem gravida eu. Quisque scelerisque risus nec eros molestie interdum. Morbi non congue mauris, ut consectetur risus. Nunc non ultricies ipsum. In feugiat fringilla libero eleifend rhoncus. Maecenas sem ipsum, posuere eget euismod quis, rhoncus eu nisl. Nam a tellus ultrices, tincidunt nulla nec, fermentum diam. Proin non sapien sit amet sapien laoreet tristique. Aenean posuere nisi lorem, pulvinar laoreet nunc ullamcorper et.
+              Duis faucibus, ligula non aliquam viverra, dui elit facilisis lectus, et sagittis elit justo id turpis. Aenean sagittis nulla ut mi aliquam, vitae gravida libero tempus. Sed consectetur ac nulla lacinia vulputate. Donec nec placerat urna. Integer semper elit eget nibh vestibulum laoreet. Aenean eget nisl facilisis, consectetur ante vitae, consectetur nisi. Pellentesque ut bibendum urna. Phasellus volutpat felis nec auctor elementum. Nam quis aliquet neque, quis convallis diam. Vestibulum placerat tellus turpis, at hendrerit tellus finibus et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras porttitor volutpat ullamcorper. Quisque eleifend purus non ex ultricies eleifend.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="sampleWorksModal" class="ui large image modal">
+        <i class="ui close icon"></i>
+        <img id="sampleWorkModalImg" src="" alt="David Diaz Sample Works">
+      </div>
+
+      <div id="mySampleWorks"></div>
+      <div id="sampleWorksSection" class="ui stackable grid">
+        <div class="ui one column row">
+          <div class="ui center aligned column">
+            <p id="aboutMeTitle" class="ui dividing header">My Sample Works</p>
+          </div>
+        </div>
+
+        <div class="ui four column row sampleWorksCols">
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work1.jpg" alt="David Diaz Sample Works">
+          </div>
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work2.jpg" alt="David Diaz Sample Works">
+          </div>
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work3.jpg" alt="David Diaz Sample Works">
+          </div>
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work5.jpg" alt="David Diaz Sample Works">
+          </div>
+        </div>
+
+        <div class="ui four column row sampleWorksCols">
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work4.jpg" alt="David Diaz Sample Works">
+          </div>
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work7.jpg" alt="David Diaz Sample Works">
+          </div>
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work8.jpg" alt="David Diaz Sample Works">
+          </div>
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work9.jpg" alt="David Diaz Sample Works">
+          </div>
+        </div>
+
+        <div class="ui four column row sampleWorksCols">
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work13.jpg" alt="David Diaz Sample Works">
+          </div>
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work15.jpg" alt="David Diaz Sample Works">
+          </div>
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work14.jpg" alt="David Diaz Sample Works">
+          </div>
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work16.jpg" alt="David Diaz Sample Works">
+          </div>
+        </div>
+
+        <div class="ui four column row sampleWorksCols">
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work6.jpg" alt="David Diaz Sample Works">
+          </div>
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work10.jpg" alt="David Diaz Sample Works">
+          </div>
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work11.jpg" alt="David Diaz Sample Works">
+          </div>
+          <div class="ui column sampleWorksCols">
+            <img class="ui large image" onclick="showSampleWorkImg(this)" src="res/images/sample-work12.jpg" alt="David Diaz Sample Works">
+          </div>
+        </div>
+      </div>
+
+      <div id="references"></div>
+      <div id="sampleWorksSection" class="ui stackable grid">
+        <div class="ui one column row">
+          <div class="ui center aligned column">
+            <p id="aboutMeTitle" class="ui dividing header">References</p>
+          </div>
+        </div>
+
+        <div id="referencesRow" class="ui four column doubling center aligned row">
+          <div class="ui column">
+            <div class="ui compact segment">
+              <img class="ui image" src="res/images/logo1.png" alt="Random Free Logo">
+              <p class="ui header sidebarItem">Duis Rutrum</p>
+            </div>
+          </div>
+
+          <div class="ui column">
+            <div class="ui compact segment">
+              <img class="ui image" src="res/images/logo2.png" alt="Random Free Logo">
+              <p class="ui header sidebarItem">Maecenas</p>
+            </div>
+          </div>
+
+          <div class="ui column">
+            <div class="ui compact segment">
+              <img class="ui image" src="res/images/logo3.png" alt="Random Free Logo">
+              <p class="ui header sidebarItem">Etiam Quis</p>
+            </div>
+          </div>
+
+          <div class="ui column">
+            <div class="ui compact segment">
+              <img class="ui image" src="res/images/logo4.png" alt="Random Free Logo">
+              <p class="ui header sidebarItem">Aliquam</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="awards"></div>
+      <div id="sampleWorksSection" class="ui stackable grid">
+        <div class="ui one column row">
+          <div class="ui center aligned column">
+            <p id="aboutMeTitle" class="ui dividing header">Awards</p>
+          </div>
+        </div>
+
+        <div id="referencesRow" class="ui three column center aligned row">
+          <div class="ui column">
+            <div class="ui segment">
+              <h1 class="ui icon header">
+                <i class="fas fa-award"></i>
+                <div class="content awardTitle">
+                  Orci varius natoque penatibus et magnis dis
+                </div>
+                <div class="sub header awardYear">
+                  2016
+                </div>
+              </h1>
+            </div>
+          </div>
+
+          <div class="ui column">
+            <div class="ui segment">
+              <h1 class="ui icon header">
+                <i class="fas fa-award"></i>
+                <div class="content awardTitle">
+                  Sed tempor lacus nisi, interdum bibendum enim
+                </div>
+                <div class="sub header awardYear">
+                  2017
+                </div>
+              </h1>
+            </div>
+          </div>
+
+          <div class="ui column">
+            <div class="ui segment">
+              <h1 class="ui icon header">
+                <i class="fas fa-trophy"></i>
+                <div class="content awardTitle">
+                  Fusce vehicula odio vulputate neque accumsan
+                </div>
+                <div class="sub header awardYear">
+                  2018
+                </div>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact"></div>
+      <div id="sampleWorksSection" class="ui stackable grid">
+        <div class="ui one column row">
+          <div class="ui center aligned column">
+            <p id="aboutMeTitle" class="ui dividing header">Contact</p>
+          </div>
+        </div>
+
+        <div id="referencesRow" class="ui one column row">
+          <div class="ui column">
+            <div class="ui top attached clearing center aligned segment">
+              <a href="#" class="ui circular icon massive basic button">
+                <i class="fab fa-dribbble"></i>
+              </a>
+
+              <a href="#" class="ui circular icon massive basic button">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a href="#" class="ui circular icon massive basic button">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a href="#" class="ui circular icon massive basic button">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+
+            <div class="ui bottom attached clearing segment">
+              <form class="ui form">
+                <div class="ui two fields">
+                  <div class="ui required field">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name">
+                  </div>
+                  <div class="ui required field">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="ui two fields">
+                  <div class="ui required field">
+                    <label>Phone</label>
+                    <input type="text" placeholder="555 36 24">
+                  </div>
+                  <div class="ui required field">
+                    <label>Email</label>
+                    <input type="text" placeholder="example@mail.com">
+                  </div>
+                </div>
+                <div class="ui required field">
+                  <label>Your Questions Details</label>
+                  <textarea placeholder="Details..."></textarea>
+                </div>
+                <div class="ui field">
+                  <button id="sendBtn" class="ui large fade animated button">
+                    <div class="visible content">Send</div>
+                    <div class="hidden content">
+                      <i class="fas fa-paper-plane icon"></i>
+                    </div>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        All rights reserved. | <a style="color: white;" href="https://clasxsoft.com">ClasX Software &reg</a>
+      </footer>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="js/ddpp.js"></script>
+</html>
